@@ -38,7 +38,7 @@ jobs:
         github-token: ${{ secrets.REPO_TOKEN }}
         script: |
           github.rest.actions.createWorkflowDispatch({
-            owner: context.repo.owner,
+            owner: 'HUSTer2013',
             repo: 'now-subconverter',
             workflow_id: 'sub-web.yml',
             ref: 'master',
